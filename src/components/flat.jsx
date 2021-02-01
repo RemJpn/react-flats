@@ -11,13 +11,10 @@ const Flat = ({ flat, selectFlat, selected }) => {
 
   return (
     <div className={`card${selected ? ' active' : ''}`} style={styles}　onClick={handleClick}>
-      <div className="card-category">
-        {`${flat.price} ${flat.priceCurrency}`}
-      </div>
       <div className="card-description">
         <h2>{flat.name}</h2>
+        <p>{`${flat.price} ${flat.priceCurrency}`}</p>
       </div>
-      <a className="card-link" href="#"></a>
     </div>
   );
 };
